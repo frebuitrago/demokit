@@ -1,0 +1,23 @@
+# Build file for the Seattle Demokit.
+# (Essentially includes the RepyV2 runtime, libraries, and seash)
+#
+# XXX Should include demo apps too!
+repy_v2/*
+portability/*
+seattlelib_v2/*
+clearinghouse/*
+seash/*
+affix/*
+affix/components/*
+utf/*
+dist/LICENSE.txt
+
+# Tests
+test affix/tests/*
+test affix/components/tests/*
+test repy_v2/testsV2/*
+test portability/tests/*
+test seattlelib_v2/tests/*
+test seash/tests/*
+test clearinghouse/tests/*
+test utf/tests/*
