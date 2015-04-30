@@ -11,12 +11,15 @@ To build the demokit,
 ```
 git clone https://github.com/SeattleTestbed/demokit.git
 cd demokit
-mkdir seattle_demokit # This is the build target folder
-/scripts
+# Create build target folder first
+mkdir seattle_demokit
+cd scripts
 python initialize.py
-python 
+python build.py ../seattle_demokit
+
+# Now package the build for download
+cd ..
+zip -r seattle_demokit ./seattle_demokit
 ```
 
-See [the Seattle wiki](https://seattle.poly.edu/wiki/BuildDemokit) for build instructions.
-
-To package a built
+See [the Seattle wiki](https://seattle.poly.edu/wiki/BuildDemokit) for build details.
